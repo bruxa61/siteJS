@@ -1,235 +1,310 @@
-*{
-    background-color: #e4e3db;
-}
-
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 10vh;
-}
-
-button{
-    padding: 10px 20px;
-    font-size: 2vh;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-p {
-    font-family: Arial, sans-serif;
-    font-size: 2.5vh;
+    background-color: #fdf7ec
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-/* PRIMEIRA PARTE */
-
-#jogo{
-    background-color: #1a4068;
-}
-
-#a{
-    background-color: #1a4068;
-}
-
-#bi{
-    background-color: #305e26;
-}
-
-#b{
-    background-color: #305e26;
-}
-
-#media{
-    background-color: #2886eb;
-}
-
-#c{
-    background-color: #2886eb;
-}
-
-#gorjeta{
-    background-color: #8400d1;
-}
-
-#d{
-    background-color: #8400d1;
-}
-
-#hora{
-    background-color: #ff008c;
-}
-
-#e{
-    background-color: #ff008c;
-}
-
-/* SEGUNDA PARTE */
-#f{
-    background-color: #ff008c;
-}
-
-#filme{
-    background-color: #ff008c;
-}
-
-#g{
-    background-color: #305e26;
-}
-
-#frete{
-    background-color: #305e26;
-}
-
-#h{
-    background-color: #1a4068;
-}
-
-#pontuação{
-    background-color: #1a4068;
-}
-
-#i{
-    background-color: #ee6103;
-}
-
-#senha{
-    background-color: #ee6103;
-}
-
-#j{
-    background-color: #8400d1;
-}
-
-#roupa{
-    background-color: #8400d1;
-}
-
-#k{
-    background-color: #2886eb;
-}
-
-#moeda{
-    background-color: #2886eb;
-}
-
-#l{
-    background-color: #ff008c;
-}
-
-#adivinhação{
-    background-color: #ff008c;
-}
-
-#m{
-    background-color: #2886eb;
-}
-
-#palindromo{
-    background-color: #2886eb;
-}
-
-
-
-
-/* CARD */
-/* From Uiverse.io by JohnnyCSilva */ 
-.card {
-    width: 252px;
-    height: 265px;
-    background: white;
-    border-radius: 30px;
-    box-shadow: 15px 15px 30px #bebebe,
-               -15px -15px 30px #ffffff;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .img {
-    width: 100%;
-    height: 50%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background: linear-gradient(#e66465, #9198e5);
+h2{
     display: flex;
-    align-items: top;
-    justify-content: right;
-  }
-  
-  .save {
-    transition: 0.2s ease-in-out;
-    border-radius: 10px;
-    margin: 20px;
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .text {
-    margin: 20px;
+}
+
+.text {
+    margin: 13px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
   }
-  
-  .save .svg {
+
+/* PRIMEIRA PARTE */
+.cardJOGO {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
     transition: 0.2s ease-in-out;
-    width: 15px;
-    height: 15px;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .icon-box {
-    margin-top: 15px;
-    width: 70%;
-    padding: 10px;
-    background-color: #e3fff9;
-    border-radius: 10px;
+  .imgJOGO{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#418fe2, #1a4068);
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardBI {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .icon-box svg {
-    width: 17px;
+  .imgBI{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#6ad652, #305e26);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardMEDIA {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .text .h3 {
-    font-family: 'Lucida Sans' sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: black;
+  .imgMEDIA{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#75b8ff, #2886eb);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardGORJETA {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .text .p {
-    font-family: 'Lucida Sans' sans-serif;
-    color: #999999;
-    font-size: 13px;
+  .imgGORJETA{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#bf50ff, #8400d1);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardHORA {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .icon-box .span {
-    margin-left: 10px;
-    font-family: 'Lucida Sans' sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: #9198e5;
+  .imgHORA{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#f87ec1, #ff008c);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+/* SEGUNDA PARTE */
+.cardFILME {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .card:hover {
-    cursor: pointer;
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  .imgFILME{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#f87ec1, #ff008c);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardFRETE {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .save:hover {
-    transform: scale(1.1) rotate(10deg);
+  .imgFRETE{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#6ad652, #305e26);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardPONTUAÇÃO {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
   }
   
-  .save:hover .svg {
-    fill: #ced8de;
+  .imgPONTUAÇÃO{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#418fe2, #1a4068);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardSENHA {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .imgSENHA{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#ff9f60, #ee6103);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardROUPA {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .imgROUPA{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#bf50ff, #8400d1);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardMOEDA {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .imgMOEDA{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#75b8ff, #2886eb);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardADIVINHAÇÃO {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .imgADIVINHAÇÃO{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#f87ec1, #ff008c);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardPALINDROMO {
+    width: 252px;
+    height: 220px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .imgPALINDROMO{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#75b8ff, #2886eb);
+    display: flex;
+    align-items: top;
+    justify-content: right;
   }
