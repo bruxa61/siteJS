@@ -1,0 +1,39 @@
+*{
+    background-color: #e4e3db;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 2vh;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #305e26;
+}
+button:hover {
+    background-color: #192c15;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 2.5vh;
+}
+
+#ano{
+    background-color: white;    
+    height: 3.7vh;
+}
+
+#calen{
+    width: 65vh;
+    height: 65vh;
+    margin: 10vh;
+    margin-left: 130vh;
+}

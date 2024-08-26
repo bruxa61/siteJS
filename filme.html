@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Filmes</title>
+    <link rel="stylesheet" href="filme.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Classificação de Filmes</h1>
+    <br>
+    <input type="number" id="idade" placeholder="Qual a sua idade?" />
+    <br>
+    <label for="genero">Escolha o gênero do filme</label>
+    <br>
+    <select  id="genero">
+        <option value=""></option>
+        <option value="Animação">Animação</option>
+        <option value="Aventura">Aventura</option>
+        <option value="Ação">Ação</option>
+        <option value="Drama">Drama</option>
+        <option value="Comédia">Comédia</option>
+        <option value="Suspense">Suspense</option>
+        <option value="Romance">Romance</option>
+        <option value="Documentário">Documentário</option>
+    </select>
+    <br>
+    <button onclick="filmes()">Recomendar</button>
+    <p id="resultado"></p>
+    </div>
+</body>
+<script src="exercio2.js"></script>
+</html>

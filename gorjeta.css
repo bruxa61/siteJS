@@ -1,0 +1,45 @@
+.h1 {
+    font-size: large;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 150px;
+    background-color: #e4e3db;
+
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 13px;
+    margin: 14px;
+}
+
+#Gorjeta{
+    padding: 10px;
+    font-size: 13px;
+    margin: 14px;
+}
+
+button {
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: #8400d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #661a92;
+}
+.result {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#img{
+    width: 50vh;
+    height: 50vh;
+}

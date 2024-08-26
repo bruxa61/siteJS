@@ -1,0 +1,40 @@
+.h1 {
+    font-size: large;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 150px;
+    background-color: #e4e3db;
+
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 13px;
+    margin: 14px;
+}
+
+button {
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: #2886eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2467af;
+}
+.resul {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#escola{
+    width: 80vh;
+    height: 80vh;
+    margin-top: -5vh;
+}

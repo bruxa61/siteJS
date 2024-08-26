@@ -1,0 +1,48 @@
+.h1 {
+    font-size: large;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 150px;
+    background-color: #e4e3db;
+
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 13px;
+    margin: 14px;
+}
+
+button {
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: #1a4068;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #090f47;
+}
+.result {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#diversão1{
+    width: 100vh;
+    height: 100vh;
+    margin-right: 70vh;
+}
+
+#diversão2{
+    margin: absolute;
+    margin-top: -100vh;
+    margin-left: 90vh;
+    height: 100vh;
+    width: 100vh;
+}

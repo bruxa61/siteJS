@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="moeda.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Conversor de Moedas.</h1>
+
+    <input type="number" id="valor" placeholder="Digite o valor desejado: ">
+
+    <label for="moeda">Converter para:</label>
+
+
+    <input list="moedas" id="moeda" name="moeda" placeholder="Digite ou selecione uma moeda:">
+
+    <datalist id="moedas">
+        <option value="Dólar Americano">(USD)</option>
+        <option value="Euro">(EUR)</option>
+        <option value="Libra Esterlina">(GBP)</option>
+        <option value="Iene">(JPY)</option>
+        <option value="Franco Suíço">(CHF)</option>
+        <option value="Yuan Renminbi">(CNY)</option>
+        <option value="Peso Argentino">(ARS)</option>
+        <option value="Lira Turca">(TRY)</option>
+        <option value="Won">(KRW)</option>
+        <option value="Coroa Dinamarquesa">(DKK)</option>
+    </datalist>
+
+
+    <button onclick="conversormoeda()">Converter</button>
+
+    <p id="resul"></p>
+    </div>
+</body>
+<script src="exercio2.js"></script>
+</html>

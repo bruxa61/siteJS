@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Frete</title>
+    <link rel="stylesheet" href="frete.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Frete</h1>
+        <label for="peso">Peso do pacote (kg):</label>
+        <input type="number" id="peso" placeholder="Digite o peso" min="0">
+        
+        <label for="regiao">Região de entrega:</label>
+        <select id="regiao">
+            <option value="Norte">Norte</option>
+            <option value="Sul">Sul</option>
+            <option value="Centro-Oeste">Centro-Oeste</option>
+        </select>
+        
+        <button onclick="calcularFrete()">Calcular Frete</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="exercio2.js"></script>
+</body>
+</html>
