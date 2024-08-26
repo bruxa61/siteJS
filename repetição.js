@@ -23,3 +23,22 @@ while (palpite !== numeroAleatorio){
 }
 }
 }
+
+// PALÍNDROMO
+function palindromo() {
+
+    const palavra = document.getElementById('entrada').value;
+
+    let palavraReversa = '';
+    let i = palavra.length - 1;
+
+    do{
+        palavraReversa += palavra[i];
+        i--;
+    } while (i >= 0);
+
+    const resul = (palavra.toLowerCase() === palavraReversa.toLowerCase()) ? palavra + ' é um palídromo!' :  palavra + ' não é um palídromo.';
+
+    document.getElementById('resul').innerText = resul;
+
+}
