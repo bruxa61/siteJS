@@ -42,3 +42,18 @@ function palindromo() {
     document.getElementById('resul').innerText = resul;
 
 }
+
+//PAR OU ÍMPAR
+function verificarParOuImpar() {
+    let numero;
+    do {
+        numero = parseInt(document.getElementById('numeroInput').value);
+
+        if (numero % 2 === 0) {
+            document.getElementById('resultado').textContent = "O número " + numero + " é par.";
+        } else {
+            document.getElementById('resultado').textContent = "O número " + numero + " é ímpar.";
+        }
+
+    } while (false);
+}
