@@ -10,21 +10,21 @@ a{
     color: rgb(0, 0, 0);
 }
 
-h2{
-    display: flex;
-}
-
 .text {
-    margin: 13px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
   }
 
+  h2{
+    margin-top: 100px;
+  }
+
 /* PRIMEIRA PARTE */
 .cardJOGO {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -38,15 +38,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#418fe2, #1a4068);
+    background: linear-gradient(#ff9cb1, #F25072);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardBI {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -60,15 +60,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#6ad652, #305e26);
+    background: linear-gradient(#ffbbf3, #F2A1E3);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardMEDIA {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -82,15 +82,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#75b8ff, #2886eb);
+    background: linear-gradient(#bf8bff, #9E57F5);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardGORJETA {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -104,15 +104,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#bf50ff, #8400d1);
+    background: linear-gradient(#e278ff, #CE50F2);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardHORA {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -134,8 +134,8 @@ h2{
 
 /* SEGUNDA PARTE */
 .cardFILME {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -156,8 +156,8 @@ h2{
   }
 
   .cardFRETE {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -171,15 +171,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#6ad652, #305e26);
+    background: linear-gradient(#ffbbf3, #F2A1E3);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardPONTUAÇÃO {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -193,15 +193,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#418fe2, #1a4068);
+    background: linear-gradient(#e278ff, #CE50F2);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardSENHA {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -215,15 +215,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#ff9f60, #ee6103);
+    background: linear-gradient(#bf8bff, #9E57F5);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardROUPA {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -237,15 +237,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#bf50ff, #8400d1);
+    background: linear-gradient(#ff9cb1, #F25072);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardMOEDA {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -259,15 +259,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#75b8ff, #2886eb);
+    background: linear-gradient(#ff89cc, #F46BB8);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardADIVINHAÇÃO {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -288,8 +288,8 @@ h2{
   }
 
   .cardPALINDROMO {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -303,15 +303,15 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#75b8ff, #2886eb);
+    background: linear-gradient(#ff89cc, #F46BB8);
     display: flex;
     align-items: top;
     justify-content: right;
   }
 
   .cardPAROUIMPAR {
-    width: 252px;
-    height: 220px;
+    width: 232px;
+    height: 180px;
     background: white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #a39f8e;
@@ -325,7 +325,29 @@ h2{
     height: 63%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#6ad652, #305e26);
+    background: linear-gradient(#ff9cb1, #F25072);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .cardFORCA {
+    width: 232px;
+    height: 180px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #a39f8e;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .imgFORCA{
+    width: 100%;
+    height: 63%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#bf8bff, #9E57F5);
     display: flex;
     align-items: top;
     justify-content: right;
