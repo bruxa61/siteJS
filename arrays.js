@@ -1,39 +1,84 @@
-//converte a string para maiúsculas
-let palavraSecreta = prompt("Digite a palavra secreta:").toUpperCase();
-//armazena o tamanho da palavra secreta em uma variável
-let tamanhoPalavra = palavraSecreta.length;
+let palavraSecreta = "";
+let tamanhoPalavra;
 let letrasJaChutadas = "";
 let letrasErradas = "";
 let letrasAcertadas = "";
-
-//muda cada letra da palavra por _
-for (let i = 0; i < tamanhoPalavra; i++){
-    letrasAcertadas += "_";
-}
-
-//inicializa a quantidae de tentativas feitas pelo usuário
 let tentativas = 0;
-//número máximo de tentativas permitidas
 const maxTentativas = 6;
 
-while(tentativas < maxTentativas){
-    let letraChutada = prompt('Palavra: ${letrasAcertadas}\nTentativas: ${tentativas}\nLetras já chutadas: ${letrasJaChutadas}\nLetras erradas: ${letrasErradas}\nDigite uma letra:').toUpperCase();
-    
-    if(letrasJaChutadas.includes(letraChutada) ||
-    letrasAcertadas.includes(letraChutada) ||
-    letrasErradas.includes(letraChutada)) {
-        alert("Você já chutou essa letra! Tente outra.");
-        continue;
-    }
+    function iniciarJogo() {
+        while (!/^[A-Z]+$/.test(palavraSecreta)) {
+        palavraSecreta = prompt("Digite a palavra secreta:").toUpperCase();}
+        tamanhoPalavra = palavraSecreta.length;
+        letrasJaChutadas = "";
+        letrasErradas = "";
+        letrasAcertadas = "";
+        tentativas = 0;
 
-    if(palavraSecreta.includes(letraChutada)){
-        for(let i = 0; i < tamanhoPalavra; i++){
-            if(palavraSecreta[i] === letraChutada){
-                letrasAcertadas = letrasAcertadas.substr(0, i) + letraChutada + letrasAcertadas.substr(i + 1);
+        for (let i = 0; i < tamanhoPalavra; i++) {
+            letrasAcertadas += "_";
+        }
+
+        //troca o "_" pela letra acertada
+        document.getElementById('palavra').textContent = letrasAcertadas;
+        //mostra as letras já chutadas pelo jogador
+        document.getElementById('letrasChutadas').textContent = letrasJaChutadas;
+        }
+
+        function chutarLetra() {
+        //converte a letra chutada do jogador para maiúscula
+        let letraChutada = document.getElementById('chute').value.toUpperCase();
+        //limpa o campo de entrada após o chute
+        document.getElementById('chute').value = '';
+            
+        //para o usuário digitar apenas uma letra, e se ela esta ente a-z
+        if (letraChutada.length !== 1 || !letraChutada.match(/[A-Z]/i)) {
+            alert("Por favor, digite algo válido.");
+            return;
+        }
+
+        if (letrasJaChutadas.includes(letraChutada) ||
+            letrasAcertadas.includes(letraChutada)) {
+            alert("Você já chutou essa letra! Tente outra.");
+            return;
+            }
+
+            //adiciona as letras chutadas à letras já chutadas
+            letrasJaChutadas += letraChutada;
+            document.getElementById('letrasChutadas').textContent = letrasJaChutadas;
+
+        if (palavraSecreta.includes(letraChutada)) {
+            //analisa a palvra secreta do início ao fim e substitui cada "_" pela letraChutada se ela for estritamente igual(===) a palavraSecreta
+            for (let i = 0; i < tamanhoPalavra; i++) {
+                if (palavraSecreta[i] === letraChutada) {
+                    letrasAcertadas = letrasAcertadas.substr(0, i) + letraChutada + letrasAcertadas.substr(i + 1);
+                }
+            }
+            //atualiza o HTML com a nova letraAcertada
+            document.getElementById('palavra').textContent = letrasAcertadas;
+
+            if (letrasAcertadas === palavraSecreta) {
+                //inícia o jogo novamente
+                setTimeout(function() {
+                alert('Parabéns! Você acertou a palavra secreta "' + palavraSecreta + '" com ' + (tentativas) + ' tentativas.');
+                iniciarJogo();
+                }, 100);
+                }
+            } else {
+            //adiciona a letraChutada a letrasErradas
+            letrasErradas += letraChutada + " ";
+            //aumenta o número de tentativas
+            tentativas++;
+
+            //o jogo acaba se o máximo de tentativas for atingido e começa novamente
+            if (tentativas === maxTentativas) {
+                setTimeout(function() {
+                alert('Game Over! A palavra secreta era "' + palavraSecreta + '".');
+                iniciarJogo();
+                }, 100);
+                }
             }
         }
-    if(letrasAcertadas === palavraSecreta){
-        alert('Parabéns! Você acertou a palavra secreta "')
-    }
-    }
-}
+
+        //inícia o jogo quando a página for atualizada
+        iniciarJogo();
