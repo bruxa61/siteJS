@@ -5,6 +5,15 @@ let letrasErradas = "";
 let letrasAcertadas = "";
 let tentativas = 0;
 const maxTentativas = 6;
+const hangmanImages = [
+    'img/corpo0.jpeg', 
+    'img/corpo1.jpeg',
+    'img/corpo2.jpeg',
+    'img/corpo3.jpeg',
+    'img/corpo4.jpeg',
+    'img/corpo5.jpeg',
+    'img/corpo6.jpeg'
+];
 
     function iniciarJogo() {
         while (!/^[A-Z]+$/.test(palavraSecreta)) {
@@ -23,6 +32,8 @@ const maxTentativas = 6;
         document.getElementById('palavra').textContent = letrasAcertadas;
         //mostra as letras já chutadas pelo jogador
         document.getElementById('letrasChutadas').textContent = letrasJaChutadas;
+        // Inicia com a imagem do bonequinho vazio
+        document.getElementById('hangmanImage').src = hangmanImages[0]; 
         }
 
         function chutarLetra() {
@@ -69,6 +80,7 @@ const maxTentativas = 6;
             letrasErradas += letraChutada + " ";
             //aumenta o número de tentativas
             tentativas++;
+            document.getElementById('hangmanImage').src = hangmanImages[tentativas];
 
             //o jogo acaba se o máximo de tentativas for atingido e começa novamente
             if (tentativas === maxTentativas) {
@@ -82,3 +94,7 @@ const maxTentativas = 6;
 
         //inícia o jogo quando a página for atualizada
         iniciarJogo();
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+// Inicia o jogo quando a página for carregada
+// window.onload = iniciarJogo;
